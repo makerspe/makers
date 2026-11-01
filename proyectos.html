@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos · MAKERS</title>
+  <meta name="description" content="Ideas creativas que inspiran y conectan. Explora, filtra y cotiza proyectos.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="proyectos">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header" data-component="header"></header>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="proy-title">
+      <div class="container page-hero__inner">
+        <h1 class="page-hero__title page-hero__title--sentence" id="proy-title">Ideas creativas que <strong class="text-magenta">inspiran</strong> y <strong class="text-blue">conectan</strong></h1>
+        <div class="page-hero__collage" aria-hidden="true">
+          <img src="img/portada.jpg" alt=""><img src="img/robot-morado.jpg" alt=""><img src="img/animacion-telefonos.jpg" alt=""><img src="img/personaje-rosado.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Listado de proyectos">
+      <div class="container">
+        <div class="toolbar">
+          <div class="toolbar__row">
+            <label class="field"><span>Buscar</span><input type="search" id="q" placeholder="Título, categoría o freelancer"></label>
+            <label class="field"><span>Ordenar por</span>
+              <select id="sort" class="select"><option value="recent">Más recientes</option><option value="popular">Tendencias</option><option value="low">Precio: menor a mayor</option><option value="high">Precio: mayor a menor</option></select></label>
+            <label class="field field--range"><span>Precio base: <output id="max-out">Sin límite</output></span><input type="range" id="max" min="0" max="4000" step="50" value="4000"></label>
+          </div>
+          <div class="chips" id="cat-chips" role="group" aria-label="Filtrar por categoría"></div>
+        </div>
+        <p class="count" id="count" aria-live="polite"></p>
+        <div class="grid grid--cards" id="project-grid"></div>
+        <div class="more"><button class="btn btn--outline" type="button" id="more">Ver más proyectos</button></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

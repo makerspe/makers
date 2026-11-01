@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAKERS · Encuentra el talento que tu proyecto necesita</title>
+  <meta name="description" content="Descubre profesionales creativos, conoce su trabajo y conecta con el talento que hará realidad tus ideas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="home">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header" data-component="header"></header>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container hero__inner">
+        <div>
+          <p class="eyebrow">Creatividad que impulsa negocios</p>
+          <h1 class="hero__title" id="hero-title">Encuentra <span class="text-magenta">el talento</span> <span class="text-blue">que tu proyecto necesita.</span></h1>
+          <p class="hero__text">Descubre profesionales creativos, conoce su trabajo, cotiza al instante y conecta con quien hará realidad tus ideas.</p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="servicios.html">Explorar servicios</a>
+            <a class="btn btn--outline" href="publicar.html">Publicar proyecto</a>
+          </div>
+        </div>
+        <figure class="hero__media">
+          <img src="img/portada.jpg" alt="Plataforma MAKERS: clientes y talento creativo">
+          <figcaption class="hero__badge"><strong id="stat-pro">0</strong>profesionales creativos</figcaption>
+          <div class="hero__badge hero__badge--2"><strong id="stat-proj">0</strong>proyectos publicados</div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cat-title">
+      <div class="container">
+        <h2 class="section__title" id="cat-title">Explorar por <em>categoría</em></h2>
+        <ul class="categories" id="home-categories"></ul>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="pro-title">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" id="pro-title">Profesionales <em>destacados</em></h2>
+          <a class="btn btn--outline" href="proyectos.html">Ver todos los proyectos</a>
+        </div>
+        <div class="grid grid--cards" id="home-featured"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="how-title">
+      <div class="container">
+        <h2 class="section__title" id="how-title">¿Cómo <em>funciona?</em></h2>
+        <ol class="grid grid--3 steps">
+          <li class="step"><h3 class="step__title">Busca o publica</h3><p class="step__text">Explora servicios con precios claros o publica tu solicitud en minutos.</p></li>
+          <li class="step"><h3 class="step__title">Conecta y trabaja</h3><p class="step__text">Cotiza según lo que necesitas, contrata o recibe propuestas de freelancers.</p></li>
+          <li class="step"><h3 class="step__title">Recibe y crece</h3><p class="step__text">Recibe tu proyecto, califica y sigue haciendo crecer tu marca.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cta-title" style="padding-top:0">
+      <div class="container">
+        <div class="cta"><div class="cta__inner">
+          <div>
+            <h2 class="cta__title" id="cta-title">Tu próxima gran idea <strong>empieza aquí.</strong></h2>
+            <p class="cta__intro">MAKERS lo hace realidad, ya sea que busques servicios o quieras ofrecer tu talento.</p>
+          </div>
+          <div class="cta__roles">
+            <article class="role-card"><img src="img/mujer-cafe.jpg" alt="" loading="lazy"><h3 class="role-card__title">Soy cliente</h3><p>Necesito un servicio creativo para mi negocio.</p><a class="btn btn--dark" href="registro.html?rol=cliente">Crear cuenta de cliente</a></article>
+            <article class="role-card"><img src="img/mujer-formal.jpg" alt="" loading="lazy"><h3 class="role-card__title">Soy freelance</h3><p>Quiero ofrecer mis servicios y conseguir nuevos proyectos.</p><a class="btn btn--dark" href="registro.html?rol=freelance">Crear mi perfil freelance</a></article>
+          </div>
+        </div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

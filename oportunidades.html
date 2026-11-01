@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Oportunidades · MAKERS</title>
+  <meta name="description" content="Encuentra proyectos con descuento y solicitudes abiertas para hacer crecer tu negocio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="oportunidades">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header" data-component="header"></header>
+
+  <main id="main">
+
+    <section class="page-hero" aria-labelledby="op-title">
+      <div class="container page-hero__inner">
+        <h1 class="page-hero__title" id="op-title">Encuentra proyectos <em>y haz crecer tu negocio</em></h1>
+        <div class="page-hero__collage" aria-hidden="true">
+          <img src="img/pura-cafe.jpg" alt=""><img src="img/alma-cafe.jpg" alt=""><img src="img/packaging.jpg" alt=""><img src="img/setup-gamer.jpg" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="deals-t">
+      <div class="container">
+        <h2 class="section__title" id="deals-t">Descuentos por <em>categoría</em></h2>
+        <ul class="deals" id="deals"></ul>
+        <p class="filter-note" id="deal-filter" aria-live="polite"></p>
+        <div class="grid grid--cards" id="deal-grid"></div>
+      </div>
+    </section>
+
+    <section class="section section--tint" aria-labelledby="off-t">
+      <div class="container">
+        <h2 class="section__title" id="off-t">Ofertas <em>destacadas</em></h2>
+        <div id="offers"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="brief-t">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title" id="brief-t">Solicitudes <em>abiertas</em></h2>
+          <a class="btn btn--outline" href="publicar.html">Publicar una solicitud</a>
+        </div>
+        <p class="lead">Clientes que buscan talento ahora. Si eres freelancer, envía tu propuesta con tu precio.</p>
+        <div class="stack" id="brief-list"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>

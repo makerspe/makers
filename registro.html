@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crear cuenta · MAKERS</title>
+  <meta name="description" content="Regístrate en MAKERS como cliente o freelancer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="registro">
+  <a class="skip" href="#main">Saltar al contenido</a>
+  <header class="site-header" data-component="header"></header>
+
+  <main id="main">
+
+    <div class="auth" style="--auth-img:url('img/equipo-trabajando.jpg')">
+      <aside class="auth__aside"><h2>Donde las ideas encuentran a <strong>las personas capaces de hacerlas realidad.</strong></h2></aside>
+      <section class="auth__main" aria-labelledby="reg-t">
+        <div>
+          <h1 class="auth__title" id="reg-t">Crea tu cuenta</h1>
+          <p class="lead">Elige cómo quieres usar MAKERS.</p>
+          <form class="form" id="register-form">
+            <fieldset class="fieldset"><legend>Quiero registrarme como</legend>
+              <div class="role-pick">
+                <label><input type="radio" name="role" value="cliente" checked><span><strong>Cliente</strong><small>Busco servicios creativos</small></span></label>
+                <label><input type="radio" name="role" value="freelance"><span><strong>Freelance</strong><small>Ofrezco mi talento</small></span></label>
+              </div>
+            </fieldset>
+            <label class="field"><span>Nombre completo</span><input name="name" required autocomplete="name" minlength="3"></label>
+            <label class="field"><span>Correo electrónico</span><input type="email" name="email" required autocomplete="email"></label>
+            <label class="field"><span>Ciudad</span><input name="city" required autocomplete="address-level2"></label>
+            <div id="freelance-fields" class="form" hidden>
+              <label class="field"><span>Tu especialidad</span><select name="cat" id="cat" class="select"></select></label>
+              <label class="field"><span>Cuéntanos sobre ti</span><textarea name="bio" rows="3" maxlength="300" placeholder="Experiencia, estilo y tipo de proyectos que haces"></textarea></label>
+            </div>
+            <div class="field-row">
+              <label class="field"><span>Contraseña</span><input type="password" name="password" required minlength="6" autocomplete="new-password"></label>
+              <label class="field"><span>Repetir contraseña</span><input type="password" name="password2" required minlength="6" autocomplete="new-password"></label>
+            </div>
+            <p class="form__error" id="form-error" role="alert"></p>
+            <button class="btn btn--primary btn--block" type="submit">Crear cuenta</button>
+          </form>
+          <p class="auth__alt">¿Ya tienes cuenta? <a href="login.html">Inicia sesión</a></p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" data-component="footer"></footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/pages.js"></script>
+</body>
+</html>
